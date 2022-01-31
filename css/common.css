@@ -35,3 +35,15 @@ button {
   width: 100%;
   height: 100%;
 }
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
