@@ -1,20 +1,15 @@
 const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
 
-const listMarkup = [];
+const ingredientsListRef = document.querySelector('#ingredients');
 
-const listRef = document.querySelector('#ingredients');
+const createItemMarkup = function (ingredients) {
+  return ingredients.map(ingredient => {
+    const item = document.createElement('li');
+    item.classList.add('item');
+    item.textContent = ingredient;
 
-const makeIngredientsListMarkup = function (ingredients) {
-  return ingredients.forEach(ingredient => {
-    const listEl = document.createElement('li');
-
-    listEl.textContent = `${ingredient}`;
-    listEl.classList.add('item');
-
-    listMarkup.push(listEl);
+    return item;
   });
 };
 
-makeIngredientsListMarkup(ingredients);
-
-listRef.append(...listMarkup);
+ingredientsListRef.append(...createItemMarkup(ingredients));
