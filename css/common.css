@@ -47,3 +47,13 @@ button {
 #validation-input.valid {
   border-color: #4caf50;
 }
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  margin-top: 10px;
+}
