@@ -32,8 +32,8 @@ button {
 }
 
 .gallery-image {
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 220px;
 }
 
 #validation-input {
@@ -49,10 +49,7 @@ button {
 }
 
 #boxes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
 }
 .box {
   margin-top: 10px;

@@ -15,6 +15,7 @@ function checkValidation(event) {
   } = event.currentTarget;
 
   if (email.value === '' || password.value === '') {
+    event.currentTarget.reset();
     return alert('Пожалуйста, заполните все поля!');
   } else {
     console.log({
